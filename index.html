@@ -7,17 +7,22 @@
 	<meta name="email" content="juanmagomezr@gmail.com" />
 	<meta name="description" content="CV de Juanma Gomez" />
 	<style type="text/css">
-		body {background: #0067A0; font-family: helvetica, arial, sans-serif; color: #666;}
-		h1 {text-transform: lowercase; font-size: 3em; margin: 5px;}
+		
+		body {font-family: helvetica, arial, sans-serif; color: #fff;}
+		h1 {text-transform: lowercase; font-size: 3em; margin: 0;}
 		h2 {text-transform: lowercase; font-size: 2em;}
 		p {font-size: 1.5em;}
+		
 		#impress {margin: 0 auto;}
-
-		.step {width: 800px; height: 500px; padding: 40px 60px; margin: 0 auto; position: absolute; opacity: 0.3}
+		#estudios li {font-size: 1.2em;}
+		
+		.step {background: #0067A0; width: 800px; height: 500px; padding: 40px 60px; margin: 0 auto; position: absolute; opacity: 0.3; box-shadow: 0 2px 6px #000; }
 		.step.active {opacity: 1}
 		.no-slide {color: #fff;}
-		.slide {background: #fff; border: 1px solid #fff; border-radius: 10px; box-shadow: 0 2px 6px #000; opacity: 0.3}
+		.slide {border: 1px solid #0067A0; border-radius: 10px; opacity: 0.3}
 		.fallback-message {display: none;}
+		.no-list {list-style: none; margin: 0 auto;}
+		.no-list li {padding: 10px; float: left; margin: 0 auto; list-style-type: none;}
 	</style>
 </head>
 
@@ -31,13 +36,12 @@
 		<div class="step no-slide" data-x="-5000" data-y="-5000" data-scale="4" data-rotate="45">
 			<h1>Juanma Gómez</h1>
 			<h2>Consulta aquí mi Curriculum Vitae actualizado</h2>
-			<p>Además, puedes encontrarme en:
-				<ul>
-					<li>Blog: <a href="http://juanmagomez.wordpress.com" target="_blank">http://juanmagomez.wordpress.com</a>
-					<li>Twitter: @JuanmaGomeR</li>
-					<li>LinkedIn: </li>
-				</ul>
-			</p>
+			<ul class="no-list">
+				<!-- <li><img src="images/juanma.png" alt="Juanma Gomez"/></li> -->
+				<li><a href="http://juanmagomez.wordpress.com" target="_blank"><img src="images/wordpress_logo.png" alt="Blog"/></a>
+				<li><a href="https://twitter.com/JuanmaGomeR" target="_blank"><img src="images/twitter_logo.png" alt="Twitter"/></a></li>
+				<li><a href="http://es.linkedin.com/pub/juan-manuel-g%C3%B3mez-ramos/43/813/4a2" target="_blank"><img src="images/linkedin_logo.png" alt="LinkedIn"/></a></li>
+			</ul>
 		</div>
 
 		<!-- ODIGEO -->
@@ -56,7 +60,7 @@
 			<p>	En septiembre de 2010 entro a formar parte de Ibertech Formación como programador senior para el desarrollo de la aplicación de gestión comercial SGV10 para Gas Natural. En este proyecto hemos empleado la tecnología ArqV10, propietaria de Indra Software Labs, adaptando el aplicativo empleado en Gas Natural a las nuevas necesidades del cliente.</p>
 			<p>Las tareas que he desarrollado en este proyecto han sido las siguientes:
 				<ul>
-					<li>Dirección de un equipo de desarrollo</li>
+					<li>Gestión de un equipo de desarrollo</li>
 					<li>Formación en arquitectura ArqV10</li>
 					<li>Desarrollo en Java (parte servidor) y Power Builder 11 (parte cliente)</li>
 					<li>Análisis de documentación funcional y desarrollo de documentación técnica</li>
@@ -111,6 +115,14 @@
 			<p>Diseñador web en Base Biológica de Servicios, Valdemorillo</p>
 			<p>Evaluador de riesgo en operaciones de financiación al consumo en Eurocrédito, Madrid</p>
 		</div>
+
+		<div id="estudios" class="step no-slide" data-x="2000" data-y="1500" data-z="-3000" data-rotate="90" data-scale="1">
+			<h1>Estos son mis estudios</h1>
+			<h2>Bueno, algunos de ellos</h2>
+			<ul>
+				<li><p class="positioning">Ingeniería Técnica en Informática de Gestión. Universidad Carlos III de Madrid (2004-2009)</p></li>
+				<li><p class="rotating">Curso de desarrollo de aplicaciones informáticas. Comunidad de Madrid (2003)</p></li>
+				<li><p class="scaling">Licenciatura en Administración y Dirección de Empresas. Universidad Complutense de Madrid (1999-2003)</p></li>
  	</div>
 
 	<script type="text/javascript" src="js/impress.js"></script>
